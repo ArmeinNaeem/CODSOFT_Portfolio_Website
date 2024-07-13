@@ -1,0 +1,377 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: purple;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* styles.css */
+
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+/* styles.css */
+
+.logo-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+/* styles.css */
+.logo-text::first-letter {
+    text-transform: uppercase;
+    font-size: 2.4rem; /* Adjust size if needed */
+}
+
+.logo-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-text::first-letter {
+    text-transform: uppercase;
+    font-size: 2.4rem; /* Adjust size if needed */
+}
+
+
+.logo-text {
+    margin: 0;
+}
+
+
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.name-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.name h1 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.introduction p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-image img {
+    width: 800px; /* Adjust the width as needed */
+    height: 500px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+#skills {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Add this to your styles.css file */
+
+.skills-text {
+    text-align: center;
+    margin-bottom: 40px; /* Adjust as needed */
+}
+
+.skills-text {
+    flex: 1;
+}
+
+.skills-image {
+    flex: 1;
+    text-align: right;
+}
+
+.skills-image img {
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#skills li {
+    background: purple; /* Change background color to purple */
+    color: #fff;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: calc(0.2s * var(--delay));
+}
+
+#skills li:hover {
+    transform: translateY(-10px);
+    background: #551a8b; /* Darker shade of purple on hover */
+}
+
+/* Animation for Skills */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add this to your styles.css file */
+
+/* Project Card Styles */
+.project-card {
+    background: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this to your styles.css file */
+
+/* Resume Section */
+.resume-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resume-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-download a:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.resume-download a i {
+    margin-right: 5px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    position: relative;
+}
+
+.contact-info p::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px); /* Adjust width as needed */
+    height: 2px;
+    background-color: #8a5eff; /* Light purple color */
+    z-index: -1;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.social-icon:hover {
+    color: #8a5eff; /* Light purple color */
+}
+
+/* styles.css */
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007BFF;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
